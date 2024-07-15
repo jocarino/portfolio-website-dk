@@ -13,3 +13,11 @@ html.dark {
 .borderBlack {
   @apply border border-black/10;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("../public/fonts/clash-display/css/clash-display.css");
+@import url("../public/fonts/Montserrat/css/Montserrat.css");

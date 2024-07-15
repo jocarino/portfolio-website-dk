@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  frontend:
+    container_name: dk-portforlio-frontend
+    build:
+      context: .
+      target: dev
+      dockerfile: dockerfile
+    restart: always
+    command: yarn dev
+    environment:
+      - NODE_ENV=development
+      - WATCHPACK_POLLING=true
+      - CHOKIDAR_USEPOLLING=true
+    volumes:
+      - ./:/app
+      - /app/node_modules
+      - /app/.next
+    ports:
+      - "3003:3000" # Map host port 3003 to container port 3000
