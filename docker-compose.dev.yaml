@@ -18,4 +18,4 @@ services:
       - /app/node_modules
       - /app/.next
     ports:
-      - "3003:3000" # Map host port 3003 to container port 3000
+      - "3003:3000"

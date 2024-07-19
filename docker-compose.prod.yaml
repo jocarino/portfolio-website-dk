@@ -1,0 +1,7 @@
+version: "3.9"
+
+services:
+  frontend:
+    image: ${{ secrets.DOCKER_USERNAME }}/frontend:latest
+    ports:
+      - "3003:3000"
