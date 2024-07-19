@@ -56,7 +56,7 @@ jobs:
       - name: Deploy to server or Storage Box
         run: |
           ssh ${{ secrets.ARTIFACT_USERNAME  }}@${{ secrets.ARTIFACT_HOST }} << EOF
-          docker pull ${{ secrets.DOCKER_USERNAME }}/portfolio-website-dk_frontend:latest
+          docker pull ${{ secrets.DOCKER_USERNAME }}/damola_portfolio_frontend:latest
           # cd .
-          docker run -p 3003:3000 portfolio-website-dk_frontend:latest
+          docker run -p 3003:3000 damola_portfolio_frontend:latest
           EOF
