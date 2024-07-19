@@ -21,6 +21,8 @@ export const workLinks = [
     subLinks: [
       { name: "VerdeVerse", hash: "#verdeverse" },
       { name: "DamolaKevwe.com", hash: "#damolakevwecom" },
+      { name: "DisplaceByHome", hash: "#displaceByHome" },
+      { name: "Tache", hash: "#tache" },
     ],
   },
   {
@@ -28,10 +30,40 @@ export const workLinks = [
     hash: "#psychedelic-afrofuturism",
     subLinks: [],
   },
-  { name: "Graphic Design", hash: "#graphic-design", subLinks: [] },
-  { name: "Cinematography", hash: "#cinematography", subLinks: [] },
+  {
+    name: "Graphic Design",
+    hash: "#graphic-design",
+    subLinks: [
+      { name: "Creative Adult", hash: "#creative-adult" },
+      { name: "VerdeVerse", hash: "#verdeverse-graphic-design" },
+      { name: "AI Storyboarding", hash: "#ai-storyboarding" },
+      { name: "Latoja", hash: "#latoja" },
+      { name: "Buganow", hash: "#buganow" },
+      { name: "Others", hash: "#others" },
+    ],
+  },
+  {
+    name: "Cinematography",
+    hash: "#cinematography",
+    subLinks: [
+      { name: "Waiting for You", hash: "#waiting-for-you" },
+      { name: "The Cavemen Live", hash: "#the-cavemen-live" },
+      { name: "Omo Atoke", hash: "#omo-atoke" },
+      { name: "Others", hash: "#others-cinematography" },
+    ],
+  },
   { name: "Photography", hash: "#photography", subLinks: [] },
-  { name: "Architecture", hash: "#architecture", subLinks: [] },
+  {
+    name: "Architecture",
+    hash: "#architecture",
+    subLinks: [
+      { name: "Hand Drawn", hash: "#hand-drawn" },
+      { name: "CAD", hash: "#cad" },
+      { name: "Urban Cultures", hash: "#urban-cultures" },
+      { name: "Architecture & City", hash: "#architecture-and-city" },
+      { name: "Advanced Design", hash: "#advanced-design" },
+    ],
+  },
 ] as const;
 
 export const aboutLinks = [
@@ -51,28 +83,46 @@ export const aboutLinks = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
-    description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+    title: "Member Service Advisor",
+    location: "Bupa, England",
+    description: "",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "Feb. 2023 - Present",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+    title: "Sales Advisor/Visual Merchandising Trainee",
+    location: "H&M, England",
+    description: "",
+    icon: React.createElement(CgWorkAlt),
+    date: "Dec. 2022 - Jan. 2023",
+  },
+  {
+    title: "Hospitality Partner",
+    location: "John Lewis & Partners, England",
+    description: "",
+    icon: React.createElement(CgWorkAlt),
+    date: "Oct. 2021 - Sep. 2022",
+  },
+  {
+    title: "Content Curator & Graphic Designer",
+    location: "Of a Kind Creatives, USA",
+    description: "",
+    icon: React.createElement(CgWorkAlt),
+    date: "Feb. 2021 - Mar. 2021",
+  },
+  {
+    title: "Visual Designer",
+    location: "Latoja Mart, Nigeria",
+    description: "",
+    icon: React.createElement(CgWorkAlt),
+    date: "Dec. 2019 - Dec. 2020",
+  },
+  {
+    title: "Graphic Designer",
+    location: "Aug. 2019 - May. 2020",
+    description: "",
+    icon: React.createElement(CgWorkAlt),
+    date: "Aug. 2019 - May. 2020",
   },
 ] as const;
 

@@ -27,8 +27,7 @@ export default function Landing() {
                         <Link
                             href="/work"
                             className="group bg-pink-400 text-white font-bold text-2xl sm:text-[40px] sm:leading-[50px] px-6 py-4 flex items-center gap-2 rounded-2xl outline-none hover:scale-110 hover:bg-pink-900 transition"
-                            onClick={() => {
-                            }}
+                            prefetch={true}
                         >
                             Check out my work
                         </Link>

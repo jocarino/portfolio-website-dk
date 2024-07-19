@@ -1,23 +1,55 @@
 'use client';
-import Experience from "@/components/experience";
-import Intro from "@/components/intro";
+import Skills from "@/components/about/Skills";
+import Intro from "@/components/about/intro";
+import Experience from "@/components/about/experience";
+import FloatingButton from "@/components/hoverButton";
 import SideNavBarAbout from "@/components/sideNavBarAbout";
 import ActiveAboutSectionContextProvider from "@/context/active-about-section-context";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import * as Dialog from '@radix-ui/react-dialog';
+import { useState } from "react";
+import Certifications from "@/components/about/Certifications";
+import Education from "@/components/about/Education";
+import FunFacts from "@/components/about/FunFacts";
 
 export default function About() {
+  const [open, setOpen] = useState(false);
   const { setActiveSection } = useActiveSectionContext();
   setActiveSection("About");
   return (
     <main className="flex flex-col items-center">
       <ActiveAboutSectionContextProvider>
-        <div className="flex flex-row">
-          <SideNavBarAbout />
-          <div className="ml-[20rem] flex flex-col items-center">
-            <Intro />
-            <Experience />
+        <Dialog.Root open={open} onOpenChange={setOpen}>
+          <div className="grid grid-cols-1 sm:grid-cols-[20rem_1fr] w-full">
+            <div>
+              <div className="hidden sm:block sm:w-80">
+                <SideNavBarAbout />
+              </div>
+            </div>
+
+            <div className="w-full max-w-screen-xl flex flex-col items-center">
+              <Intro />
+              <Skills />
+              <Experience />
+              <Certifications />
+              <Education />
+              <FunFacts />
+            </div>
           </div>
-        </div>
+
+          <Dialog.Portal>
+            <Dialog.Overlay className="fixed inset-0 bg-black/50 z-40" />
+            <div className="w-full sm:hidden">
+              {(open) &&
+                <Dialog.Content className="fixed inset-y-0 left-0 w-4/5 max-w-sm bg-white z-50 overflow-auto">
+                  <SideNavBarAbout setIsOpen={setOpen} />
+                  <FloatingButton onClick={() => { setOpen(!open) }} />
+                </Dialog.Content>}
+            </div>
+          </Dialog.Portal>
+
+        </Dialog.Root>
+        {(!open) && <div className="sm:hidden"><FloatingButton onClick={() => { setOpen(!open) }} /></div>}
       </ActiveAboutSectionContextProvider>
     </main>
   );

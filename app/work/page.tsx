@@ -6,6 +6,11 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 import ActiveWorkSectionContextProvider from "@/context/active-work-section-context";
 import { useState } from "react";
 import * as Dialog from '@radix-ui/react-dialog';
+import PsychedelicAfrofuturism from "@/components/work/PsychedelicAfrofuturism";
+import GraphicDesign from "@/components/work/GraphicDesign";
+import Cinematography from "@/components/work/Cinematography";
+import Photography from "@/components/work/Photography";
+import Architecture from "@/components/work/Architecture";
 
 export default function Work() {
   const [open, setOpen] = useState(false);
@@ -25,6 +30,11 @@ export default function Work() {
 
             <div className="w-full max-w-screen-xl flex flex-col items-center">
               <UIDesign />
+              <PsychedelicAfrofuturism />
+              <GraphicDesign />
+              <Cinematography />
+              <Photography />
+              <Architecture />
             </div>
           </div>
 
