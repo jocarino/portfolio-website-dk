@@ -13,7 +13,7 @@ export default function Intro() {
     <section ref={ref} id="intro" className="scroll-mt-10 sm:scroll-mt-28 mb-28 w-full space-y-9">
       <Wrapper>
         <Title>Hey, I'm Damola Olaleye. I also go by Damola Kevwe.</Title>
-        <Paragraph>🗣: "Dah—Morh—Lah"  "Keh-Weh"  "Ohr—Lah—Leh—Yeh" </Paragraph>
+        <Paragraph>🗣: "Dah—Morh—Lah"  "Keh-Weh"  "Awe—Lah—Leh—Yeh" </Paragraph>
 
         <div className="flex flex-col sm:flex-row items-start sm:items-stretch gap-8">
           <div className="flex flex-col max-w-[484px] justify-between space-y-4 flex-grow h-full sm:h-[415px]">

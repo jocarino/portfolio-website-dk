@@ -36,15 +36,6 @@ COPY . .
 EXPOSE 3000
 
 # **********
-# prod stage
-# **********
-FROM inter AS prod
-
-RUN npm run build
-
-CMD ["npm", "start"]
-
-# **********
 # dev stage
 # **********
 FROM inter AS dev

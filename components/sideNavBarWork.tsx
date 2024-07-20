@@ -15,8 +15,8 @@ const SideNavBarWork: React.FC<SideNavBarWorkProps> = ({ children, setIsOpen: se
     useActiveWorkSectionContext();
 
   return (
-    <nav className="flex flex-col fixed w-[20rem] sm:top-[5rem] left-0 h-full bg-gradient-to-r from-pink-200 to-white ">
-      <ul className="flex flex-col w-full items-start justify-start pt-16 text-2xl font-medium text-black flex-nowrap gap-5">
+    <nav className="flex flex-col fixed w-[20rem] sm:top-[5rem] left-0 h-full bg-gradient-to-r from-pink-200 to-white">
+      <ul className="flex flex-col w-full items-start justify-start pt-16 text-xl sm:text-2xl font-medium text-black flex-nowrap gap-5">
         {workLinks.map((link) => (
           <li
             className="w-full h-3/4 flex flex-col items-center justify-center relative"
@@ -48,7 +48,7 @@ const SideNavBarWork: React.FC<SideNavBarWorkProps> = ({ children, setIsOpen: se
             </Link>
             {
               link.name === activeWorkSection && link?.subLinks.length > 0 && (
-                <ul className="flex flex-col py-1 pl-[55px] w-full items-start justify-start bg-gradient-to-r from-pink-400 to-white text-2xl font-normal text-black flex-nowrap gap-2">
+                <ul className="flex flex-col py-1 pl-[55px] w-full items-start justify-start bg-gradient-to-r from-pink-400 to-white font-normal text-black flex-nowrap gap-2">
                   {link?.subLinks.map((subLink) => (
                     <li
                       className=" relative"

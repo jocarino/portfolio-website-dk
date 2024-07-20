@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import { links } from "@/lib/data";
 import Link from "next/link";
@@ -8,54 +7,50 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 import Image from "next/image";
 
 export default function Header() {
-  const { activeSection, setActiveSection, } =
-    useActiveSectionContext();
+  const { activeSection, setActiveSection } = useActiveSectionContext();
 
   return (
-    <header className="z-[999] relative">
-      <nav className="flex justify-between fixed h-14 sm:h-[5rem] top-0 w-full pl-3 sm:pl-[51px] pr-3 sm:pr-[75px] bg-white">
-        <Link href="/" className="flex items-center" onClick={() => {
-          setActiveSection(null);
-        }}>
+    <header className="fixed top-0 left-0 right-0 z-[1000] bg-white">
+      <nav className="flex justify-between h-14 sm:h-20 px-4 sm:px-8">
+        <Link
+          href="/"
+          className="flex items-center"
+          onClick={() => setActiveSection(null)}
+        >
           <Image
-            src={"/logo.svg"}
+            src="/logo.svg"
             alt="logo"
             width={50}
             height={50}
-            className="h-10 sm:h-auto"
+            className="h-8 w-auto sm:h-12"
           />
         </Link>
-        <ul className="flex sm:w-[22rem] flex-wrap items-center justify-center gap-y-1 text-xl sm:text-[1.5rem] font-medium text-black ">
+        <ul className="flex items-center justify-end space-x-2 sm:space-x-4 text-xl sm:text-2xl font-medium text-black">
           {links.map((link) => (
             <li
-              className="h-3/4 flex items-center justify-center relative"
+              className="h-full flex items-center justify-center relative"
               key={link.name}
             >
               <Link
                 className={clsx(
-                  `flex w-full items-center justify-center px-3 py-3 ${activeSection === link.name ? "" : "hover:text-pink-400 "} transition `,
+                  "flex items-center justify-center px-2 py-1 sm:px-3 sm:py-2 transition",
                   {
-                    "text-white":
-                      activeSection === link.name,
+                    "text-white": activeSection === link.name,
+                    "hover:text-pink-400": activeSection !== link.name,
                   }
                 )}
                 href={link.path}
-                onClick={() => {
-                  setActiveSection(link.name);
-                }}
+                onClick={() => setActiveSection(link.name)}
               >
                 {link.name}
-
                 {link.name === activeSection && (
-                  <span
-                    className="bg-pink-400 rounded-sm absolute inset-0 -z-10"
-                  ></span>
+                  <span className="bg-pink-400 rounded-sm absolute inset-0 -z-10"></span>
                 )}
               </Link>
             </li>
           ))}
         </ul>
       </nav>
-    </header >
+    </header>
   );
 }

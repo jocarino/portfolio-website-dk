@@ -13,10 +13,16 @@ export default function Education() {
     <section ref={ref} id="education" className="scroll-mt-10 sm:scroll-mt-28 mb-28 w-full space-y-9">
       <Wrapper>
         <Title>Education</Title>
-        <Paragraph>Covenant University, 2019</Paragraph>
-        <ImageDescription>Bachelor of Science, Architecture</ImageDescription>
-        <Paragraph>Oxford Brookes University, 2023</Paragraph>
-        <ImageDescription>Master of Architecture, Architecture</ImageDescription>
+        <div className="sm:divide-y-0 divide-y divide-dashed divide-pink-400/[.5] space-y-6 sm:space-y-8 sm:divide-x-0">
+          <div>
+            <Paragraph>Covenant University, 2019</Paragraph>
+            <ImageDescription>Bachelor of Science, Architecture</ImageDescription>
+          </div>
+          <div>
+            <Paragraph>Oxford Brookes University, 2023</Paragraph>
+            <ImageDescription>Master of Architecture, Architecture</ImageDescription>
+          </div>
+        </div>
       </Wrapper>
     </section>
   );

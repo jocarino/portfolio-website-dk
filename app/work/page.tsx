@@ -18,17 +18,17 @@ export default function Work() {
   setActiveSection("Work");
 
   return (
-    <main className="flex flex-col items-center w-full">
+    <main className="flex flex-col items-center w-full max-w-[100vw] overflow-x-hidden">
       <ActiveWorkSectionContextProvider>
         <Dialog.Root open={open} onOpenChange={setOpen}>
-          <div className="grid grid-cols-1 sm:grid-cols-[20rem_1fr] w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-[minmax(0,20rem)_1fr] w-full max-w-[100vw]">
             <div>
-              <div className="hidden sm:block sm:w-80">
+              <div className="hidden sm:block sm:w-80 w-0">
                 <SideNavBarWork />
               </div>
             </div>
 
-            <div className="w-full max-w-screen-xl flex flex-col items-center">
+            <div className="w-full max-w-full flex flex-col items-center">
               <UIDesign />
               <PsychedelicAfrofuturism />
               <GraphicDesign />
@@ -39,13 +39,13 @@ export default function Work() {
           </div>
 
           <Dialog.Portal>
-            <Dialog.Overlay className="fixed inset-0 bg-black/50 z-40" />
+            <Dialog.Overlay className="fixed inset-0 bg-black/50 z-[998]" />
             <div className="w-full sm:hidden">
-              {(open) &&
-                <Dialog.Content className="fixed inset-y-0 left-0 w-4/5 max-w-sm bg-white z-50 overflow-auto">
-                  <SideNavBarWork setIsOpen={setOpen} />
-                  <FloatingButton onClick={() => { setOpen(!open) }} />
-                </Dialog.Content>}
+              <Dialog.Content className="fixed inset-y-0 left-0 w-4/5 max-w-sm bg-white z-[999] overflow-auto">
+                <SideNavBarWork setIsOpen={setOpen} />
+                {(open) &&
+                  <FloatingButton onClick={() => { setOpen(!open) }} />}
+              </Dialog.Content>
             </div>
           </Dialog.Portal>
 

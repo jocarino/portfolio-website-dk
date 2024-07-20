@@ -6,13 +6,15 @@ import Link from "next/link";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Landing() {
-    const { activeSection, setActiveSection, } = useActiveSectionContext();
-    setActiveSection(null);
+    const { setActiveSection, } = useActiveSectionContext();
+    React.useEffect(() => {
+        setActiveSection(null);
+    }, [setActiveSection]);
     return (
         <section
             className="mb-28 max-w-[90rem] text-center sm:mb-0 scroll-mt-[100rem]"
         >
-            <div className="flex flex-col-reverse sm:flex-row items-center justify-center ">
+            <div className="flex flex-col-reverse sm:flex-row items-center justify-center">
                 <div className="flex flex-col max-w-[50rem] space-y-3 sm:space-y-6">
                     <h1
                         className="text-center sm:text-left mb-5 sm:mb-10 mt-4 px-4 text-4xl sm:text-[64px] sm:leading-[80px] sm:text-4xl space-y-3 sm:space-y-6"
@@ -33,15 +35,15 @@ export default function Landing() {
                         </Link>
                     </div>
                 </div>
-                <div className="flex items-center justify-center sm:ml-[-8rem]">
+                <div className="flex-shrink-0 w-48 sm:w-full">
                     <Image
                         src="/dk.png"
                         alt="Damola's portrait"
-                        width="549"
-                        height="549"
-                        quality="95"
+                        width={320}
+                        height={320}
+                        quality={95}
                         priority={true}
-                        className="rounded-full w-48 sm:w-full object-cover shadow-none"
+                        className="rounded-full w-full h-auto object-cover shadow-none"
                     />
                 </div>
             </div>

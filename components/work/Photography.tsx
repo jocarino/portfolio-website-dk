@@ -14,7 +14,7 @@ export default function Photography() {
     <section ref={ref} id="photography" className="scroll-mt-10 sm:scroll-mt-28 mb-28 w-full space-y-9">
       <SectionHeading className="bg-waitingForYou" classNameColorOverlay="bg-[#0000006B]">Photography</SectionHeading>
       <Wrapper>
-        <div className="grid grid-cols-[465px_528px] gap-1">
+        <div className="grid grid-cols-[47fr_53fr]  max-w-full overflow-x-auto gap-1">
           <div className="flex flex-col space-y-1">
             <Image src="/photo-1.jpg" alt="Photograph" width={466} height={351} />
             <Image src="/photo-3.jpg" alt="Photograph" width={466} height={696} />

@@ -6,7 +6,7 @@ services:
     build:
       context: .
       target: dev
-      dockerfile: dockerfile
+      dockerfile: dev.dockerfile
     restart: always
     command: yarn dev
     environment:
