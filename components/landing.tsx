@@ -35,15 +35,15 @@ export default function Landing() {
                         </Link>
                     </div>
                 </div>
-                <div className="flex-shrink-0 w-48 sm:w-full">
+                <div className="flex items-center justify-center sm:ml-[-8rem]">
                     <Image
                         src="/dk.png"
                         alt="Damola's portrait"
-                        width={320}
-                        height={320}
-                        quality={95}
+                        width="549"
+                        height="549"
+                        quality="95"
                         priority={true}
-                        className="rounded-full w-full h-auto object-cover shadow-none"
+                        className="rounded-full w-48 sm:w-full object-cover shadow-none"
                     />
                 </div>
             </div>
