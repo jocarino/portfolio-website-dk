@@ -10,7 +10,7 @@ export default function Intro() {
   const { ref } = useAboutSectionInView("Intro", 0.1);
 
   return (
-    <section ref={ref} id="intro" className="scroll-mt-10 sm:scroll-mt-28 mb-28 w-full space-y-9">
+    <section ref={ref} id="intro" className="scroll-mt-10 sm:scroll-mt-28 mb-9 w-full space-y-4">
       <Wrapper>
         <Title>Hey, I'm Damola Olaleye. I also go by Damola Kevwe.</Title>
         <Paragraph>🗣: "Dah—Morh—Lah"  "Keh-Weh"  "Awe—Lah—Leh—Yeh" </Paragraph>

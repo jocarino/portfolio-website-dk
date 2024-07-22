@@ -8,6 +8,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        pink: {
+          400: "#CE0988",
+          200: "#FFDFF3",
+        },
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -37,6 +43,11 @@ module.exports = {
         urbanCultures: "url('../public/urban-cul-bg.png')",
         architectureAndCity: "url('../public/arch-and-city.png')",
         advandedDesign: "url('../public/adv-cul-des.png')",
+        photography: "url('../public/photo-1.jpg')",
+        handDrawn: "url('../public/bed-3.png')",
+        aad: "url('../public/aad-5.jpg')",
+        customGradient:
+          "linear-gradient(90deg, #FFDFF3 0%, #FFDFF3 49.5%, #F9DFFF 72.5%, #FFFFFF 99%)",
       },
     },
   },

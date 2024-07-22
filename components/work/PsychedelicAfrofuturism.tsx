@@ -23,7 +23,7 @@ export default function PsychedelicAfrofuturism() {
         <Paragraph>This dissertation project in my Architecture Masters Degree, themed  ‘Psychedelic Afrofuturism’ is inspired by the proposal to create feelings of mind-altering consciousness without being under the influence of psychedelics.</Paragraph>
         <Paragraph>The aspect of Afrofuturism stems from the passion to share the story of Black History, African diaspora culture and its intersection with technology to evolve to Afrofuturism.</Paragraph>
 
-        <div className="flex flex-col space-y-2 sm:flex-row sm:space-x-2">
+        <div className="flex flex-col space-y-2 sm:flex-row sm:space-x-2 sm:space-y-0">
           <Image src="/effect-lights-left.png" alt="Effect of Psychedelic Lights on Manhattan Roads Purple" width={372} height={260} />
           <Image src="/effect-lights-right.png" alt="Effect of Psychedelic Lights on Manhattan Roads Blue" width={372} height={260} />
         </div>
@@ -36,7 +36,7 @@ export default function PsychedelicAfrofuturism() {
 
         <Image src="/street-view-manhattan.png" alt="Street View of Psychedelic Manhattan" width={748} height={499} />
         <ImageDescription>Street View of Psychedelic Manhattan</ImageDescription>
-        <div className="flex flex-col space-y-2 sm:flex-row sm:space-x-2">
+        <div className="flex flex-col space-y-2 sm:flex-row sm:space-x-2 sm:space-y-0">
           <Image src="/dk-exhibition-left.png" alt="Images from the Exhibition right" width={371} height={370} />
           <Image src="/dk-exhibition-right.png" alt="Images from the Exhibition left" width={371} height={370} />
         </div>

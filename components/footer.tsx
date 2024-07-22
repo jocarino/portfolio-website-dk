@@ -1,16 +1,30 @@
 import React from "react";
+import { HiMail } from 'react-icons/hi';
+import { FaLinkedin } from 'react-icons/fa';
+import Link from "next/link";
 
 export default function Footer() {
+  const email = "damolakevwe@gmail.com";
+
+  const handleEmailClick = (e: any) => {
+    e.preventDefault();
+    window.location.href = `mailto:${email}`;
+  };
   return (
-    <footer className="mb-10 px-4 text-center text-gray-500">
-      <small className="mb-2 block text-xs">
-        &copy; 2030 Ricardo. All rights reserved.
-      </small>
-      <p className="text-xs">
-        <span className="font-semibold">About this website:</span> built with
-        React & Next.js (App Router & Server Actions), TypeScript, Tailwind CSS,
-        Framer Motion, React Email & Resend, Vercel hosting.
-      </p>
+    <footer className="text-center items-center align-middle flex flex-row w-full">
+      <div className="ml-[20rem] px-4  flex flex-row justify-between items-center bg-gradient-to-r from-white to-pink-200 w-full h-[80px]">
+        <p className="text-pink-400 font-medium">
+          Damola Kevwe | Designer | damolakevwe@gmail.com
+        </p>
+        <div className="flex items-center space-x-4">
+          <Link href="https://www.linkedin.com/in/oluwadamola-olaleye-29b10279/">
+            <FaLinkedin className="w-6 h-6 text-pink-400" />
+          </Link>
+          <a href={`mailto:${email}`} onClick={handleEmailClick}>
+            <HiMail className="w-6 h-6 text-pink-400" />
+          </a>
+        </div>
+      </div>
     </footer>
   );
 }

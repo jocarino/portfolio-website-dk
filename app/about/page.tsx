@@ -3,7 +3,6 @@ import Skills from "@/components/about/Skills";
 import Intro from "@/components/about/intro";
 import Experience from "@/components/about/experience";
 import FloatingButton from "@/components/hoverButton";
-import SideNavBarAbout from "@/components/sideNavBarAbout";
 import ActiveAboutSectionContextProvider from "@/context/active-about-section-context";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import * as Dialog from '@radix-ui/react-dialog';
@@ -11,6 +10,8 @@ import { useState } from "react";
 import Certifications from "@/components/about/Certifications";
 import Education from "@/components/about/Education";
 import FunFacts from "@/components/about/FunFacts";
+import Footer from "@/components/footer";
+import SideNavBarAbout from "@/components/sideNavBarAbout";
 
 export default function About() {
   const [open, setOpen] = useState(false);
@@ -51,6 +52,7 @@ export default function About() {
         </Dialog.Root>
         {(!open) && <div className="sm:hidden"><FloatingButton onClick={() => { setOpen(!open) }} /></div>}
       </ActiveAboutSectionContextProvider>
+      <Footer />
     </main>
   );
 }

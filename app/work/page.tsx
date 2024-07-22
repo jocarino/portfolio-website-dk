@@ -1,6 +1,5 @@
 'use client';
 import FloatingButton from "@/components/hoverButton";
-import SideNavBarWork from "@/components/sideNavBarWork";
 import UIDesign from "@/components/work/UIDesign";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import ActiveWorkSectionContextProvider from "@/context/active-work-section-context";
@@ -11,6 +10,8 @@ import GraphicDesign from "@/components/work/GraphicDesign";
 import Cinematography from "@/components/work/Cinematography";
 import Photography from "@/components/work/Photography";
 import Architecture from "@/components/work/Architecture";
+import Footer from "@/components/footer";
+import SideNavBarWork from "@/components/sideNavBarWork";
 
 export default function Work() {
   const [open, setOpen] = useState(false);
@@ -52,6 +53,7 @@ export default function Work() {
         </Dialog.Root>
         {(!open) && <div className="sm:hidden"><FloatingButton onClick={() => { setOpen(!open) }} /></div>}
       </ActiveWorkSectionContextProvider>
+      <Footer />
     </main >
   );
 }

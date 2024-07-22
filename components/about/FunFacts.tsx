@@ -10,7 +10,7 @@ export default function FunFacts() {
   const { ref } = useAboutSectionInView("Fun Facts", 0.1);
 
   return (
-    <section ref={ref} id="fun-facts" className="scroll-mt-10 sm:scroll-mt-28 mb-28 w-full space-y-9">
+    <section ref={ref} id="fun-facts" className="scroll-mt-10 sm:scroll-mt-28 mb-9 w-full space-y-9">
       <Wrapper>
         <Title>Fun Facts</Title>
         <Paragraph>I’ve lived in 4 countries 🌍 and visited over 15 in my short lifetime. I enjoy traveling.</Paragraph>

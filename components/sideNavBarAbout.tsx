@@ -15,7 +15,7 @@ const SideNavBarAbout: React.FC<SideNavBarAboutProps> = ({ children, setIsOpen: 
 
   return (
     <nav className="flex flex-col fixed w-[20rem] sm:top-[5rem] left-0 h-full bg-gradient-to-r from-pink-200 to-white" >
-      <ul className="flex flex-col w-full items-start justify-start pt-16 text-xl sm:text-2xl font-medium text-black flex-nowrap gap-5">
+      <ul className="flex flex-col w-full items-start justify-start pt-16 text-xl sm:text-2xl font-medium text-black flex-nowrap gap-2 sm:gap-5 overflow-scroll sm:overflow-hidden">
         {aboutLinks.map((link) => (
           <li
             className="w-full h-3/4 flex items-center justify-center relative"

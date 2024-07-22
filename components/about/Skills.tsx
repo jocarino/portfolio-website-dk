@@ -14,7 +14,7 @@ export default function Skills() {
   const skillsCol3 = ["Motion Design", "User Research", "User Testing", "Illustration", "Colour & Composition", "Storyboarding",
     "Video Editing",];
   return (
-    <section ref={ref} id="skills" className="scroll-mt-10 sm:scroll-mt-28 mb-28 w-full space-y-9">
+    <section ref={ref} id="skills" className="scroll-mt-10 sm:scroll-mt-28 mb-9 w-full space-y-9">
       <Wrapper>
         <Title>Skills</Title>
         <div className="flex flex-col sm:flex-row sm:space-x-[178px]">

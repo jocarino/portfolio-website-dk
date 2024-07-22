@@ -10,7 +10,7 @@ export default function Certifications() {
   const { ref } = useAboutSectionInView("Certifications", 0.1);
 
   return (
-    <section ref={ref} id="certifications" className="scroll-mt-10 sm:scroll-mt-28 mb-28 w-full space-y-9">
+    <section ref={ref} id="certifications" className="scroll-mt-10 sm:scroll-mt-28 mb-9 w-full space-y-9">
       <Wrapper>
 
         <Title>Certifications</Title>

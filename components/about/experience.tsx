@@ -16,7 +16,7 @@ export default function Experience() {
   const { ref } = useAboutSectionInView("Experience");
 
   return (
-    <section id="experience" ref={ref} className="scroll-mt-10 sm:scroll-mt-28 mb-28 w-full max-w-100vw space-y-9">
+    <section id="experience" ref={ref} className="scroll-mt-10 sm:scroll-mt-28 mb-9 w-full max-w-100vw space-y-9">
       <Wrapper>
         <Title>My experience</Title>
         <VerticalTimeline lineColor="#fde9f4" >
@@ -53,7 +53,7 @@ export default function Experience() {
             </React.Fragment>
           ))}
         </VerticalTimeline>
-        <div className="pt-6">
+        <div className="pt-4">
           <Link href="/Damola Olaleye.pdf" download="Damola Olaleye.pdf" className="underline">Click here to view my full resume</Link>
         </div>
       </Wrapper>

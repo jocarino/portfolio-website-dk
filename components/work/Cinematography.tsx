@@ -17,7 +17,7 @@ export default function Cinematography() {
 
   return (
     <section ref={ref} id="cinematography" className="scroll-mt-10 sm:scroll-mt-28 mb-28 w-full space-y-9">
-      <div id="waiting-for-you" className="scroll-mt-10 w-full flex flex-col items-center">
+      <div id="waiting-for-you" className="scroll-mt-10 w-full flex flex-col">
         <SectionHeading className="bg-waitingForYou" classNameColorOverlay="bg-[#0000006B]">Waiting For You</SectionHeading>
         <Wrapper>
           <Paragraph>1st A.C for “Waiting For You” award winning short film</Paragraph>
@@ -33,7 +33,7 @@ export default function Cinematography() {
           <Paragraph>Official Selection: The Paus Premieres Festival 2021</Paragraph>
         </Wrapper>
       </div>
-      <div id="the-cavemen-live" className="scroll-mt-10 w-full flex flex-col items-center">
+      <div id="the-cavemen-live" className="scroll-mt-10 w-full flex flex-col">
         <SectionHeading className="bg-theCavemenLive" classNameColorOverlay="bg-[#0000006B]">The Cavemen Live</SectionHeading>
         <Wrapper>
           <Paragraph> Worked as one of the Cinematographers & Photographers for The Cavemen Live Concert, from backstage coverage, BTS and the main show to the end of the concert.</Paragraph>
@@ -42,7 +42,7 @@ export default function Cinematography() {
           <ImageDescription>Tweet regarding coverage</ImageDescription>
         </Wrapper>
       </div>
-      <div id="omo-atoke" className="scroll-mt-10 w-full flex flex-col items-center">
+      <div id="omo-atoke" className="scroll-mt-10 w-full flex flex-col">
         <SectionHeading className="bg-omoAtoke" classNameColorOverlay="bg-[#0000006B]">Omo Atoke</SectionHeading>
         <Wrapper>
           <Paragraph>Camera Assistant for “Omo Atoke” short film</Paragraph>
@@ -52,27 +52,27 @@ export default function Cinematography() {
           <ImageDescription><Link href="https://www.youtube.com/watch?v=2Y9rFU_4Svc&ab_channel=EbonyLifeCreativeAcademy">Omo Atoke - play on YouTube</Link></ImageDescription>
         </Wrapper>
       </div>
-      <div id="others-cinematography" className="scroll-mt-10 w-full flex flex-col items-center">
+      <div id="others-cinematography" className="scroll-mt-10 w-full flex flex-col">
         <SectionHeading className="bg-othersCinematography" classNameColorOverlay="bg-[#000000A1]">Others</SectionHeading>
         <Wrapper>
           <Title>Small Talk</Title>
           <Paragraph>Director of Photography for “Small Talk" short film, one of the few short films that was shot in 24 hours and edited within a week.</Paragraph>
-          <div className="flex flex-col sm:flex-row sm:space-x-0 space-y-2">
-            <div className="flex flex-col sm:flex-row sm:space-x-2 space-y-2">
+          <div className="flex flex-col sm:space-x-0 space-y-2">
+            <div className="flex flex-col sm:flex-row sm:space-x-2 space-y-2 sm:space-y-0">
               <Image src="/others-1.png" alt="Small Talk film" width={376} height={221} />
               <Image src="/others-2.png" alt="Small Talk film" width={376} height={221} />
             </div>
-            <div className="flex flex-col sm:flex-row sm:space-x-2 space-y-2">
+            <div className="flex flex-col sm:flex-row sm:space-x-2 space-y-2 sm:space-y-0">
               <Image src="/others-3.png" alt="Small Talk film" width={376} height={221} />
               <Image src="/others-4.png" alt="Small Talk film" width={376} height={221} />
             </div>
             <Title>Film Noir</Title>
             <Paragraph>Created a short film noir style scene as part of the lessons during my Cinematography and Lighting course at a EbonyLife Creative Academy.</Paragraph>
-            <div className="flex flex-col sm:flex-row sm:space-x-2 space-y-2">
+            <div className="flex flex-col sm:flex-row sm:space-x-2 space-y-2 sm:space-y-0">
               <Image src="/noir-1.png" alt="Small Talk film" width={376} height={212} />
               <Image src="/noir-2.png" alt="Small Talk film" width={376} height={212} />
             </div>
-            <div className="flex flex-col sm:flex-row sm:space-x-2 space-y-2">
+            <div className="flex flex-col sm:flex-row sm:space-x-2 space-y-2 sm:space-y-0">
               <Image src="/noir-3.png" alt="Small Talk film" width={376} height={212} />
               <Image src="/noir-4.png" alt="Small Talk film" width={376} height={212} />
             </div>
