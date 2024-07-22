@@ -119,7 +119,7 @@ export const experiencesData = [
   },
   {
     title: "Graphic Designer",
-    location: "Aug. 2019 - May. 2020",
+    location: "Buganow, Nigeria",
     description: "",
     icon: React.createElement(CgWorkAlt),
     date: "Aug. 2019 - May. 2020",
