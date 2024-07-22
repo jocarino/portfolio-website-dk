@@ -16,7 +16,7 @@ export default function Intro() {
         <Paragraph>🗣: "Dah—Morh—Lah"  "Keh-Weh"  "Awe—Lah—Leh—Yeh" </Paragraph>
 
         <div className="flex flex-col lg:flex-row items-start lg:items-stretch gap-8">
-          <div className="flex flex-col max-w-[484px] justify-between space-y-4 flex-grow h-full lg:h-[415px]">
+          <div className="flex flex-col lg:max-w-[484px] justify-between space-y-4 flex-grow h-full lg:h-[415px]">
             <div className="space-y-4">
               <Title>I'm a designer and storyteller.</Title>
               <div className="flex flex-wrap items-center gap-2">
@@ -33,7 +33,7 @@ export default function Intro() {
             <Paragraph>I enjoy working with Figma, Illustrator and Photoshop though I'm proficient in other design tools.</Paragraph>
           </div>
           <div className="flex-shrink-0">
-            <Image src="/dk.gif" alt="Damola Kevwe Banner" width={415} height={415} className="w-full max-w-[415px] h-auto" />
+            <Image src="/dk.gif" alt="Damola Kevwe Banner" width={415} height={415} className="w-full max-w-[415px] h-auto " />
           </div>
         </div>
       </Wrapper>
