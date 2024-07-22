@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className="bg-white text-gray-950 relative max-h-[100vh] w-full max-w-[100vw] overflow-x-hidden">
         <ActiveSectionContextProvider>
           <Header />
-          <main className="pt-14 sm:pt-20">
+          <main className="pt-14 lg:pt-20">
             {children}
           </main>
         </ActiveSectionContextProvider>

@@ -16,22 +16,22 @@ export default function GraphicDesign() {
 
 
   return (
-    <section ref={ref} id="graphic-design" className="scroll-mt-10 sm:scroll-mt-28 mb-28 w-full space-y-9">
+    <section ref={ref} id="graphic-design" className="scroll-mt-10 lg:scroll-mt-28 mb-28 w-full space-y-9">
       <div id="creative-adult" className="scroll-mt-10 w-full flex flex-col items-center">
         <SectionHeading className="bg-creativeAdult" classNameColorOverlay="bg-[#C99100B2]">Creative Adult</SectionHeading>
         <Wrapper>
           <Paragraph>A podcast series interviewing experienced creatives across different ages about how they manage to stay creative when adulthood often demands sacrificing creativity for stability.</Paragraph>
           <Image src="/ca-site-mockup.png" alt="Site Mockup" width={760} height={427} />
-          <div className="flex flex-col sm:flex-row">
+          <div className="flex flex-col lg:flex-row">
             <Image src="/ca-colours.png" alt="Website Colours" width={380} height={213} />
             <Image src="/ca-site-mockup2.png" alt="Site Mockup" width={380} height={213} />
           </div>
-          <div className="flex flex-col sm:flex-row">
+          <div className="flex flex-col lg:flex-row">
             <Image src="/ca-site-mockup-merch.png" alt="Merch Mockup" width={380} height={176} />
             <Image src="/ca-site-mockup-merch2.png" alt="Merch Mockup" width={380} height={176} />
           </div>
           <Image src="/ca-site-mockup-display.png" alt="Website Mockup" width={760} height={675} />
-          <div className="flex flex-col sm:flex-row">
+          <div className="flex flex-col lg:flex-row">
             <Image src="/ca-illustrations.png" alt="Merch Mockup" width={350} height={340} />
             <Video src="/ca-gif.mov" width={380} height={340} />
           </div>

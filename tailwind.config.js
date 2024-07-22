@@ -49,6 +49,13 @@ module.exports = {
         customGradient:
           "linear-gradient(90deg, #FFDFF3 0%, #FFDFF3 49.5%, #F9DFFF 72.5%, #FFFFFF 99%)",
       },
+      screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1100px",
+        xl: "1280px",
+        "2xl": "1536px",
+      },
     },
   },
   plugins: [],

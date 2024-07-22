@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-[1000] bg-white">
-      <nav className="flex justify-between h-14 sm:h-20 px-4 sm:px-8">
+      <nav className="flex justify-between h-14 lg:h-20 px-4 lg:px-8">
         <Link
           href="/"
           className="flex items-center"
@@ -22,10 +22,10 @@ export default function Header() {
             alt="logo"
             width={50}
             height={50}
-            className="h-8 w-auto sm:h-12"
+            className="h-8 w-auto lg:h-12"
           />
         </Link>
-        <ul className="flex items-center justify-end space-x-2 sm:space-x-4 text-xl sm:text-2xl font-medium text-black">
+        <ul className="flex items-center justify-end space-x-2 lg:space-x-4 text-xl lg:text-2xl font-medium text-black">
           {links.map((link) => (
             <li
               className="h-full flex items-center justify-center relative"
@@ -33,7 +33,7 @@ export default function Header() {
             >
               <Link
                 className={clsx(
-                  "flex items-center justify-center px-2 py-1 sm:px-3 sm:py-2 transition",
+                  "flex items-center justify-center px-2 py-1 lg:px-3 lg:py-2 transition",
                   {
                     "text-white": activeSection === link.name,
                     "hover:text-pink-400": activeSection !== link.name,

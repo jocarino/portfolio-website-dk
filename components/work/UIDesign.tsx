@@ -16,7 +16,7 @@ export default function UIDesign() {
 
 
   return (
-    <section ref={ref} id="ui-design" className="scroll-mt-10 sm:scroll-mt-28 mb-28 w-full space-y-9">
+    <section ref={ref} id="ui-design" className="scroll-mt-10 lg:scroll-mt-28 mb-28 w-full space-y-9">
       <div id="verdeverse" className="scroll-mt-10 w-full flex flex-col items-center">
 
         <SectionHeading className="bg-verdeVerseBackground" classNameColorOverlay="bg-[#391C2E4D]">VerdeVerse</SectionHeading>
@@ -24,7 +24,7 @@ export default function UIDesign() {
           <Title>Overview
             <Paragraph>In our fast-paced lives, finding time to care for our plants can be a challenge. The absence of a user-friendly solution for plant care, especially with automated watering systems, inspired VerdeVerse. This app streamlines plant care, seamlessly integrating with automated watering, simplifying life for busy plant lovers.</Paragraph>
           </Title>
-          <div className="flex flex-row sm:space-x-[178px] space-x-2">
+          <div className="flex flex-row lg:space-x-[178px] space-x-2">
             <Title>Role
               <Paragraph><p className="text-base font-normal leading-[30px]">User Research</p></Paragraph>
               <Paragraph><p className="text-base font-normal leading-[30px]">UI Design</p></Paragraph>
@@ -87,11 +87,11 @@ export default function UIDesign() {
       </div>
       <div id="displaceByHome" className="scroll-mt-10 w-full flex flex-col items-center">
 
-        <SectionHeading className="bg-displaceByHome overflow-hidden bg-[length:300%_auto] sm:bg-[length:250%_auto] bg-[center_bottom_-50px]" classNameColorOverlay="bg-[#4C30424D]">Displace by HOM</SectionHeading>
+        <SectionHeading className="bg-displaceByHome overflow-hidden bg-[length:300%_auto] lg:bg-[length:250%_auto] bg-[center_bottom_-50px]" classNameColorOverlay="bg-[#4C30424D]">Displace by HOM</SectionHeading>
         <Wrapper>
 
           <Paragraph>Humanity On the Move Association (HOM) is a Portuguese-registered non-profit association founded in April 2021 in response to the growing hostility towards refugees. HOM recognises the need to move towards a humanity beyond borders to support refugees in rebuilding their lives in our communities.</Paragraph>
-          <div className="flex flex-row sm:space-x-[178px] space-x-2">
+          <div className="flex flex-row lg:space-x-[178px] space-x-2">
             <Title>Role
               <Paragraph><p className="text-base font-normal leading-[30px]">Visual Design</p></Paragraph>
               <Paragraph><p className="text-base font-normal leading-[30px]">UI Design</p></Paragraph>
@@ -122,7 +122,7 @@ export default function UIDesign() {
         <Wrapper>
           <Title>Overview</Title>
           <Paragraph>In the chaos of daily life, managing tasks efficiently can be a daunting challenge. Tache was born out of the need for a user-friendly, intuitive to-do list app that not only allows users to add and track tasks but also integrates seamlessly with their calendar. The design challenge was to create an app that simplifies task management, encourages productivity, and seamlessly incorporates into users' existing routines.</Paragraph>
-          <div className="flex flex-row sm:space-x-[178px] space-x-2">
+          <div className="flex flex-row lg:space-x-[178px] space-x-2">
             <Title>Role
               <Paragraph><p className="text-base font-normal leading-[30px]">UI Design</p></Paragraph>
               <Paragraph><p className="text-base font-normal leading-[30px]">Prototyping</p></Paragraph>
@@ -159,29 +159,29 @@ export default function UIDesign() {
 
           <Title>The Design</Title>
 
-          <div className="flex flex-col items-center sm:flex-row sm:space-x-[178px] space-x-2">
+          <div className="flex flex-col items-center lg:flex-row lg:space-x-[178px] space-x-2">
             <div>
               <div>
-                <Image className="w-56 sm:w-80" src="/add-new-wireframe.png" alt="Add new screen wireframe" width={384} height={690} />
+                <Image className="w-56 lg:w-80" src="/add-new-wireframe.png" alt="Add new screen wireframe" width={384} height={690} />
               </div>
               <ImageDescription>Add new screen wireframe</ImageDescription>
             </div>
 
             <div>
-              <Image className="w-56 sm:w-80" src="/calender-wireframe.png" alt="Calendar screen wireframe" width={384} height={690} />
+              <Image className="w-56 lg:w-80" src="/calender-wireframe.png" alt="Calendar screen wireframe" width={384} height={690} />
               <ImageDescription>Calendar Screen Wireframe</ImageDescription>
             </div>
           </div>
-          <div className="flex flex-col items-center sm:flex-row sm:space-x-[178px] space-x-2">
+          <div className="flex flex-col items-center lg:flex-row lg:space-x-[178px] space-x-2">
             <div>
               <div>
-                <Image className="w-56 sm:w-80" src="/start-screen-tache.png" alt="Start Screen High Fidelity Mockup" width={384} height={690} />
+                <Image className="w-56 lg:w-80" src="/start-screen-tache.png" alt="Start Screen High Fidelity Mockup" width={384} height={690} />
               </div>
               <ImageDescription>Start Screen High Fidelity Mockup</ImageDescription>
             </div>
 
             <div>
-              <Image className="w-56 sm:w-80" src="/home-screen-tache.png" alt="Home Screen High Fidelity Mockup" width={384} height={690} />
+              <Image className="w-56 lg:w-80" src="/home-screen-tache.png" alt="Home Screen High Fidelity Mockup" width={384} height={690} />
               <ImageDescription>Home Screen High Fidelity Mockup</ImageDescription>
             </div>
           </div>

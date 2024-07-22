@@ -6,7 +6,7 @@ type ImageDescriptionProps = {
 
 export default function ImageDescription({ children }: ImageDescriptionProps) {
   return (
-    <p className="text-sm sm:text-base font-normal leading-[35px]">
+    <p className="text-sm lg:text-base font-normal leading-[35px]">
       {children}
     </p>
   );

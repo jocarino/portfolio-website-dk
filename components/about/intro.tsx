@@ -10,13 +10,13 @@ export default function Intro() {
   const { ref } = useAboutSectionInView("Intro", 0.1);
 
   return (
-    <section ref={ref} id="intro" className="scroll-mt-10 sm:scroll-mt-28 mb-9 w-full space-y-4">
+    <section ref={ref} id="intro" className="scroll-mt-10 lg:scroll-mt-28 mb-9 w-full space-y-4">
       <Wrapper>
         <Title>Hey, I'm Damola Olaleye. I also go by Damola Kevwe.</Title>
         <Paragraph>🗣: "Dah—Morh—Lah"  "Keh-Weh"  "Awe—Lah—Leh—Yeh" </Paragraph>
 
-        <div className="flex flex-col sm:flex-row items-start sm:items-stretch gap-8">
-          <div className="flex flex-col max-w-[484px] justify-between space-y-4 flex-grow h-full sm:h-[415px]">
+        <div className="flex flex-col lg:flex-row items-start lg:items-stretch gap-8">
+          <div className="flex flex-col max-w-[484px] justify-between space-y-4 flex-grow h-full lg:h-[415px]">
             <div className="space-y-4">
               <Title>I'm a designer and storyteller.</Title>
               <div className="flex flex-wrap items-center gap-2">

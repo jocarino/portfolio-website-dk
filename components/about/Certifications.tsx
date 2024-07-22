@@ -10,11 +10,11 @@ export default function Certifications() {
   const { ref } = useAboutSectionInView("Certifications", 0.1);
 
   return (
-    <section ref={ref} id="certifications" className="scroll-mt-10 sm:scroll-mt-28 mb-9 w-full space-y-9">
+    <section ref={ref} id="certifications" className="scroll-mt-10 lg:scroll-mt-28 mb-9 w-full space-y-9">
       <Wrapper>
 
         <Title>Certifications</Title>
-        <div className="sm:divide-y-0 divide-y divide-dashed divide-pink-400/[.5] space-y-6 sm:space-y-8 sm:divide-x-0">
+        <div className="lg:divide-y-0 divide-y divide-dashed divide-pink-400/[.5] space-y-6 lg:space-y-8 lg:divide-x-0">
           <div>
             <Paragraph>Google UX Design Professional Certificate, Jun. 2024</Paragraph>
             <ImageDescription>Grow with Google</ImageDescription>

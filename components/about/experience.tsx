@@ -16,7 +16,7 @@ export default function Experience() {
   const { ref } = useAboutSectionInView("Experience");
 
   return (
-    <section id="experience" ref={ref} className="scroll-mt-10 sm:scroll-mt-28 mb-9 w-full max-w-100vw space-y-9">
+    <section id="experience" ref={ref} className="scroll-mt-10 lg:scroll-mt-28 mb-9 w-full max-w-100vw space-y-9">
       <Wrapper>
         <Title>My experience</Title>
         <VerticalTimeline lineColor="#fde9f4" >

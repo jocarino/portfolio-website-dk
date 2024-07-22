@@ -15,15 +15,15 @@ export default function PsychedelicAfrofuturism() {
 
 
   return (
-    <section ref={ref} id="psychedelic-afrofuturism" className="scroll-mt-10 sm:scroll-mt-28 mb-28 w-full space-y-9">
-      <SectionHeading className="bg-psychedelicAfrofuturism overflow-hidden bg-[length:250%_auto] bg-[center_bottom_-35rem] sm:bg-[length:100%] sm:bg-[center_bottom_-40rem]" classNameColorOverlay="bg-[#644B5B4D]">Psychedelic Afrofuturism</SectionHeading>
+    <section ref={ref} id="psychedelic-afrofuturism" className="scroll-mt-10 lg:scroll-mt-28 mb-28 w-full space-y-9">
+      <SectionHeading className="bg-psychedelicAfrofuturism overflow-hidden bg-[length:250%_auto] bg-[center_bottom_-35rem] lg:bg-[length:100%] lg:bg-[center_bottom_-40rem]" classNameColorOverlay="bg-[#644B5B4D]">Psychedelic Afrofuturism</SectionHeading>
       <Wrapper>
         <Image src="/psychedelic-manhattan.png" alt="A Psychedelic Manhattan" width={749} height={760} />
         <ImageDescription>A Psychedelic Manhattan</ImageDescription>
         <Paragraph>This dissertation project in my Architecture Masters Degree, themed  ‘Psychedelic Afrofuturism’ is inspired by the proposal to create feelings of mind-altering consciousness without being under the influence of psychedelics.</Paragraph>
         <Paragraph>The aspect of Afrofuturism stems from the passion to share the story of Black History, African diaspora culture and its intersection with technology to evolve to Afrofuturism.</Paragraph>
 
-        <div className="flex flex-col space-y-2 sm:flex-row sm:space-x-2 sm:space-y-0">
+        <div className="flex flex-col space-y-2 lg:flex-row lg:space-x-2 lg:space-y-0">
           <Image src="/effect-lights-left.png" alt="Effect of Psychedelic Lights on Manhattan Roads Purple" width={372} height={260} />
           <Image src="/effect-lights-right.png" alt="Effect of Psychedelic Lights on Manhattan Roads Blue" width={372} height={260} />
         </div>
@@ -36,7 +36,7 @@ export default function PsychedelicAfrofuturism() {
 
         <Image src="/street-view-manhattan.png" alt="Street View of Psychedelic Manhattan" width={748} height={499} />
         <ImageDescription>Street View of Psychedelic Manhattan</ImageDescription>
-        <div className="flex flex-col space-y-2 sm:flex-row sm:space-x-2 sm:space-y-0">
+        <div className="flex flex-col space-y-2 lg:flex-row lg:space-x-2 lg:space-y-0">
           <Image src="/dk-exhibition-left.png" alt="Images from the Exhibition right" width={371} height={370} />
           <Image src="/dk-exhibition-right.png" alt="Images from the Exhibition left" width={371} height={370} />
         </div>

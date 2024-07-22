@@ -21,9 +21,9 @@ export default function About() {
     <main className="flex flex-col items-center">
       <ActiveAboutSectionContextProvider>
         <Dialog.Root open={open} onOpenChange={setOpen}>
-          <div className="grid grid-cols-1 sm:grid-cols-[20rem_1fr] w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-[20rem_1fr] w-full">
             <div>
-              <div className="hidden sm:block sm:w-80">
+              <div className="hidden lg:block lg:w-80">
                 <SideNavBarAbout />
               </div>
             </div>
@@ -40,7 +40,7 @@ export default function About() {
 
           <Dialog.Portal>
             <Dialog.Overlay className="fixed inset-0 bg-black/50 z-40" />
-            <div className="w-full sm:hidden">
+            <div className="w-full lg:hidden">
               {(open) &&
                 <Dialog.Content className="fixed inset-y-0 left-0 w-4/5 max-w-sm bg-white z-50 overflow-auto">
                   <SideNavBarAbout setIsOpen={setOpen} />
@@ -50,7 +50,7 @@ export default function About() {
           </Dialog.Portal>
 
         </Dialog.Root>
-        {(!open) && <div className="sm:hidden"><FloatingButton onClick={() => { setOpen(!open) }} /></div>}
+        {(!open) && <div className="lg:hidden"><FloatingButton onClick={() => { setOpen(!open) }} /></div>}
       </ActiveAboutSectionContextProvider>
       <Footer />
     </main>

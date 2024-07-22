@@ -22,9 +22,9 @@ export default function Work() {
     <main className="flex flex-col items-center w-full max-w-[100vw] overflow-x-hidden">
       <ActiveWorkSectionContextProvider>
         <Dialog.Root open={open} onOpenChange={setOpen}>
-          <div className="grid grid-cols-1 sm:grid-cols-[minmax(0,20rem)_1fr] w-full max-w-[100vw]">
+          <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,20rem)_1fr] w-full max-w-[100vw]">
             <div>
-              <div className="hidden sm:block sm:w-80 w-0">
+              <div className="hidden lg:block lg:w-80 w-0">
                 <SideNavBarWork />
               </div>
             </div>
@@ -41,7 +41,7 @@ export default function Work() {
 
           <Dialog.Portal>
             <Dialog.Overlay className="fixed inset-0 bg-black/50 z-[998]" />
-            <div className="w-full sm:hidden">
+            <div className="w-full lg:hidden">
               <Dialog.Content className="fixed inset-y-0 left-0 w-4/5 max-w-sm bg-white z-[999] overflow-auto">
                 <SideNavBarWork setIsOpen={setOpen} />
                 {(open) &&
@@ -51,7 +51,7 @@ export default function Work() {
           </Dialog.Portal>
 
         </Dialog.Root>
-        {(!open) && <div className="sm:hidden"><FloatingButton onClick={() => { setOpen(!open) }} /></div>}
+        {(!open) && <div className="lg:hidden"><FloatingButton onClick={() => { setOpen(!open) }} /></div>}
       </ActiveWorkSectionContextProvider>
       <Footer />
     </main >

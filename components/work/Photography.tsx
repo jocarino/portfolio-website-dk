@@ -11,7 +11,7 @@ export default function Photography() {
 
 
   return (
-    <section ref={ref} id="photography" className="scroll-mt-10 sm:scroll-mt-28 mb-28 w-full space-y-9">
+    <section ref={ref} id="photography" className="scroll-mt-10 lg:scroll-mt-28 mb-28 w-full space-y-9">
       <SectionHeading className="bg-photography" classNameColorOverlay="bg-blue-700/50">Photography</SectionHeading>
       <Wrapper>
         <div className="grid grid-cols-[47fr_53fr] max-w-fit overflow-x-auto gap-1 items-start">
