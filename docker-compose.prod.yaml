@@ -5,7 +5,6 @@ services:
     image: ${{ secrets.DOCKER_USERNAME }}/damola_portfolio_frontend:latest
     ports:
       - "3003:3000"
-    dockerfile: Dockerfile
 
   caddy:
     image: caddy:2.7-alpine
