@@ -2,6 +2,15 @@ version: "3.9"
 
 services:
   frontend:
-    image: ${{ secrets.DOCKER_USERNAME }}/frontend:latest
+    image: ${{ secrets.DOCKER_USERNAME }}/damola_portfolio_frontend:latest
     ports:
       - "3003:3000"
+    dockerfile: Dockerfile
+
+  caddy:
+    image: caddy:2.7-alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
