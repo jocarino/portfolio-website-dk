@@ -2,11 +2,13 @@ version: "3.9"
 
 services:
   frontend:
+    container_name: damola_portfolio_frontend
     image: ${{ secrets.DOCKER_USERNAME }}/damola_portfolio_frontend:latest
     ports:
       - "3003:3000"
 
   caddy:
+    container_name: caddy
     image: caddy:2.7-alpine
     ports:
       - "80:80"
