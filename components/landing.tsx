@@ -14,7 +14,7 @@ export default function Landing() {
   return (
     <>
       <Head>
-        <link rel="preload" href="/dk.png" as="image" />
+        <link rel="preload" href="/dk.webp" as="image" />
       </Head>
       <section className="mb-28 max-w-[90rem] text-center lg:mb-0 scroll-mt-[100rem]">
         <div className="flex flex-col-reverse lg:flex-row items-center justify-center lg:p-10">
@@ -41,7 +41,7 @@ export default function Landing() {
           </div>
           <div className="flex items-center justify-center lg:ml-[-7rem] lg:min-w-[30rem]">
             <Image
-              src="/dk.png"
+              src="/dk.webp"
               alt="Damola's portrait"
               width="549"
               height="549"
