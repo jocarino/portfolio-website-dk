@@ -22,7 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth font-ClashDisplay-Variable">
       <Head>
-        <meta property="og:image" content="/website-preview.webp" />
+        <meta
+          property="og:image"
+          content="https://damolakevwe.com/_next/image?url=%2Fwebsite-preview.webp&w=640&q=85"
+        />
       </Head>
 
       <body className="bg-white text-gray-950 relative max-h-[100vh] w-full max-w-[100vw] overflow-x-hidden">
