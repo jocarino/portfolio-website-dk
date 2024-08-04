@@ -10,13 +10,18 @@ export default function Certifications() {
   const { ref } = useAboutSectionInView("Certifications", 0.1);
 
   return (
-    <section ref={ref} id="certifications" className="scroll-mt-10 lg:scroll-mt-28 mb-9 w-full space-y-9">
+    <section
+      ref={ref}
+      id="certifications"
+      className="scroll-mt-10 lg:scroll-mt-28 mb-9 w-full space-y-9"
+    >
       <Wrapper>
-
-        <Title>Certifications</Title>
+        <Title variant="about">Certifications</Title>
         <div className="lg:divide-y-0 divide-y divide-dashed divide-pink-400/[.5] space-y-6 lg:space-y-8 lg:divide-x-0">
           <div>
-            <Paragraph>Google UX Design Professional Certificate, Jun. 2024</Paragraph>
+            <Paragraph>
+              Google UX Design Professional Certificate, Jun. 2024
+            </Paragraph>
             <ImageDescription>Grow with Google</ImageDescription>
           </div>
           <div>
@@ -24,15 +29,22 @@ export default function Certifications() {
             <ImageDescription>Webflow</ImageDescription>
           </div>
           <div>
-            <Paragraph>The Complete App Design Course: UX, Ul and Design Thinking, Aug. 2019</Paragraph>
+            <Paragraph>
+              The Complete App Design Course: UX, Ul and Design Thinking, Aug.
+              2019
+            </Paragraph>
             <ImageDescription>Udemy</ImageDescription>
           </div>
           <div>
-            <Paragraph>Design Rules: Principle + Practices for Great Ul Design, Jul. 2019</Paragraph>
+            <Paragraph>
+              Design Rules: Principle + Practices for Great Ul Design, Jul. 2019
+            </Paragraph>
             <ImageDescription>Udemy</ImageDescription>
           </div>
           <div>
-            <Paragraph>Learn Figma: UI/UX Design Essential Training, Jul. 2019</Paragraph>
+            <Paragraph>
+              Learn Figma: UI/UX Design Essential Training, Jul. 2019
+            </Paragraph>
             <ImageDescription>Udemy</ImageDescription>
           </div>
           <div>
