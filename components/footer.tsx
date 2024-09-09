@@ -1,6 +1,6 @@
 import React from "react";
-import { HiMail } from 'react-icons/hi';
-import { FaLinkedin } from 'react-icons/fa';
+import { HiMail } from "react-icons/hi";
+import { FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 
 export default function Footer() {
@@ -17,7 +17,7 @@ export default function Footer() {
           Damola Kevwe | Designer | damolakevwe@gmail.com
         </p>
         <div className="flex items-center space-x-4">
-          <Link href="https://www.linkedin.com/in/oluwadamola-olaleye-29b10279/">
+          <Link href="https://www.linkedin.com/in/damola-olaleye-29b10279/">
             <FaLinkedin className="lg:w-6 lg:h-6 w-5 h-5 text-pink-400" />
           </Link>
           <a href={`mailto:${email}`} onClick={handleEmailClick}>
