@@ -55,8 +55,9 @@ jobs:
       - name: Deploy to server or Storage Box
         run: |
           ssh ${{ secrets.ARTIFACT_USERNAME  }}@${{ secrets.ARTIFACT_HOST }} << EOF
-          docker pull ${{ secrets.DOCKER_USERNAME }}/damola_portfolio_frontend:latest
           cd damola_portfolio
           docker-compose -f "docker-compose.prod.yaml" down
+          docker rmi jocarino/damola_portfolio_frontend:latest
+          docker pull ${{ secrets.DOCKER_USERNAME }}/damola_portfolio_frontend:latest
           docker-compose -f "docker-compose.prod.yaml" up -d
           EOF
